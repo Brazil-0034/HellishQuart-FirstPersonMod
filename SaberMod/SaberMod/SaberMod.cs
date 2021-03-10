@@ -24,12 +24,13 @@ namespace SaberMod
             if (GameObject.Find("LongswordWloszka"))
             {
                 GameObject LongswordWloszka = GameObject.Find("LongswordWloszka");
+                Vector3 s = LongswordWloszka.transform.localScale;
                 LongswordWloszka.transform.localScale = new Vector3(s.x, s.y, 0.45f);
                 LongswordWloszka.transform.Rotate(0, 90 * Time.deltaTime, 0);
 
                 LongswordWloszka.GetComponent<MeshRenderer>().materials[2].SetColor("_Color", new Color(0, 25, 0, 1));
                 LongswordWloszka.GetComponent<MeshRenderer>().materials[2].EnableKeyword("_EMISSION");
-                LongswordWloszka.GetComponent<MeshRenderer>().materials[2].SetColor("_EmissionColor", new Color(1, 2, 1, 1));lol
+                LongswordWloszka.GetComponent<MeshRenderer>().materials[2].SetColor("_EmissionColor", new Color(1, 2, 1, 1));
             }
 
 
