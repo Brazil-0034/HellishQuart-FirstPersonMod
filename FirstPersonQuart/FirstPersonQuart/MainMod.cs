@@ -1,9 +1,3 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using MelonLoader;
 using UnityEngine;
 
@@ -48,6 +42,12 @@ namespace FirstPersonQuart
                     {
                         cameras[i].gameObject.SetActive(true);
                         cameras[i].fieldOfView = 85;
+
+                        /**
+                         * ty to kubold for not making an obfuscation mess
+                         * these gameobjects might be different for other characters
+                         * but they work for Isabela, Marie, and Janus just fine.
+                         */
 
                         GameObject.Find("pSphere1").SetActive(false);
                         GameObject.Find("pSphere2").SetActive(false);
